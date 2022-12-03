@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/jscript.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Condiciones</title>
+</head>
+
+<body>
+    <header>
+        <h1>Validar Password</h1>
+    </header>
+    <div class="info">
+        <h3>Ingresa la contraseña</h3>
+    </div>
+    
+    <div class="container">
+        <div class="div1">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Borde imagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Pedir stickers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Validar password</a>
+                </li>
+            </ul>
+        </div>        
+        <div class="flexdiv">
+            <div>                
+                <form action="">
+                    <select name="" id="sel01">
+                        <script>                            
+                            for (i = 1; i < 11; i++) {
+                                var x = document.getElementById("sel01");
+                                var option = document.createElement("option");
+                                option.value = i;
+                                option.text = i;
+                                x.add(option);
+                            }
+                        </script>
+                    </select>
+                </form>                
+            </div>
+            <div>
+                <form action="">
+                    <select name="" id="sel02">
+                        <script>                            
+                            for (i = 1; i < 11; i++) {
+                                var x = document.getElementById("sel02");
+                                var option = document.createElement("option");
+                                option.value = i;
+                                option.text = i;
+                                x.add(option);
+                            }
+                        </script>
+                    </select>
+                </form>         
+            </div>
+            <div>
+                <form action="">
+                    <select name="" id="sel03">
+                        <script>                            
+                            for (i = 1; i < 11; i++) {
+                                var x = document.getElementById("sel03");
+                                var option = document.createElement("option");
+                                option.value = i;
+                                option.text = i;
+                                x.add(option);
+                            }
+                        </script>
+                    </select>
+                </form>         
+            </div>
+        </div>
+        <div class="flex-result">
+            <div>
+                <p id="msg"></p>
+            </div>
+            <div class="button">
+                <form action="">
+                    <button type="reset" class="btn btn-primary" onclick="                    
+                    const pass911=911
+                    const pass714=714
+                    var pass1 = document.querySelector('#sel01')//value es neceasrio para objetos Documento
+                    var pass2 = document.querySelector('#sel02')//para variables, no es necesario
+                    var pass3 = document.querySelector('#sel03')                    
+                    var password = pass1.value + pass2.value + pass3.value;
+                    
+                    if(password == pass911)                    
+                    {
+                        msg.innerHTML= 'Contraseña1 correcta'
+                    }
+                    else if (password == pass714)
+                    {
+                        msg.innerHTML= 'Contraseña2 correcta'
+                    }
+                    else{
+                        msg.innerHTML= 'Contraseña incorrecta'    
+                    }
+                    ">
+                        Ingresar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Desarrollado por VVA
+    </footer>
+</body>
+
+</html>

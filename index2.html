@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/jscript.png">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">     -->
+        <title>Condiciones</title>       
+    </head>
+
+<body>
+    <header>
+        <h1>Pedir Stickers</h1>
+    </header>  
+    <div class="info">
+        <p>Puedes pedir un máximo de 10 stickers</p> 
+    </div> 
+    
+    <div class="container">
+        <div class="div1">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Borde imagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Pedir stickers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Validar password</a>
+                </li>
+            </ul>
+        </div>        
+        
+        <div class="flexdiv">            
+            <div>
+                <img src="assets/img/stick01.png" alt="">                       
+                <input type="number" min="1" placeholder="Cantidad" id="cantstick1" autofocus="true">
+                
+                    <!-- <textarea name="" id="stick1" in></textarea> -->
+                
+            </div>
+            <div>
+                <img src="assets/img/stick02.png" alt="">  
+                <input type="number" min="1" placeholder="Cantidad" id="cantstick2">
+            </div>
+            <div>
+                <img src="assets/img/stick03.png" alt="">  
+                <input type="number" min="1" placeholder="Cantidad" id="cantstick3">
+            </div>                              
+        </div> 
+        <div class="flex-result">
+            <div >
+                <p id="msg"></p>
+            </div>  
+            <div class="button">
+                <form action="">
+                    <button type="reset" class="btn btn-primary" onclick="
+                    const maxTickets=10
+                    var cant1 = document.querySelector('#cantstick1')
+                    var cant2 = document.querySelector('#cantstick2')
+                    var cant3 = document.querySelector('#cantstick3')
+                    let totalStickers = Number(cant1.value) + Number(cant2.value) + Number(cant3.value)                    
+                    var msgResult = document.querySelector('#msg')
+                    if(totalStickers <= 10)
+                    {
+                        msg.innerHTML= 'Llevas ' + totalStickers  + ' stickers'  
+                    }
+                    else{
+                        msg.innerHTML= 'Has superado el máximo de stickers (' + maxTickets +')'    
+                    }
+                    ">
+                        Verificar
+                    </button>
+                </form>
+            </div>      
+        </div>                
+    </div>
+    <footer>
+        Desarrollado por VVA
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@import "../css/bootstrap/css/bootstrap.css";
+
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: darkkhaki;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.nav {
+    width: max-content;
+}
+
+.nav .nav-item {
+    border-top: 1px solid blueviolet;
+}
+
+img {
+    height: 100%;
+}
+.info{   
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: 200px 400px;
+    grid-template-rows: repeat(2, 100px);    
+    height: 100vh;        
+    margin-left: 0px;    
+    grid-template-areas:
+        "a b"
+        "a b"
+    ;    
+}
+
+.div1 {
+    grid-area: a;    
+    align-self: flex-start;
+
+    width: 150px;
+}
+
+.div2 {
+    grid-area: b;
+    /* border: 2px solid royalblue; */
+    margin-left: 200px;
+
+}
+
+.flexdiv {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 100px;
+}
+
+.flexdiv img {
+    width: 92px;
+    height: 88px;
+
+}
+
+.flexdiv input {
+    margin-top: 5px;
+    width: 92px;
+    height: 20px;
+    resize: none;
+}
+
+.flex-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;    
+    width: 380px;
+    margin-left: 100px;
+}
+.flex-result button{    
+    align-self: stretch;
+    
+}
+
+
+/* @media (min-width:576px) {
+    .container {
+        flex-flow: row nowrap;
+    }
+} */

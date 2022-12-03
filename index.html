@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/jscript.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">     -->
+    <title>Condiciones</title>
+    <script>
+        const precioLaptop = '600000';
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Agregar borde a imagen</h1>
+    </header>
+    <div class="container">
+        <div class="div1">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Borde imagen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Pedir stickers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Validar password</a>
+                </li>
+            </ul>
+        </div>
+        <div class="div2">
+            <img src="assets/img/logo.png" alt="" id="logo" onclick="        
+            const imag=document.querySelector('#logo')
+            if(imag.style.border !='solid red')
+            {
+                imag.style.border='2px'
+                imag.style.border='solid red'
+            }
+            else
+            {
+                imag.style.border='none'
+                
+            }
+            ">
+        </div>
+        
+    </div>
+    <footer>
+        Desarrollado por VVA
+    </footer>
+</body>
+
+</html>
